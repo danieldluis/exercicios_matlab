@@ -15,7 +15,7 @@ fprintf('Temperatura máxima: %.1f °C (dia %d)\n', T_max, idx_max);
 fprintf('Temperatura mínima: %.1f °C (dia %d)\n', T_min, idx_min);
 
 figure;
-plot(dias, temperaturas, 'b-o', 'LineWidth', 1.2, 'MarkerSize', 4);
+plot(dias, temperaturas, 'b-o', 'LineWidth', 1.2, 'MarkerSize', 4, 'DisplayName', 'Temperatura');   
 hold on;
 line([1 30], [T_max T_max], 'Color', 'r', 'LineStyle', '--', 'DisplayName', sprintf('Máx: %.1f°C', T_max));
 line([1 30], [T_min T_min], 'Color', 'g', 'LineStyle', '--', 'DisplayName', sprintf('Mín: %.1f°C', T_min));
