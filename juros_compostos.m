@@ -23,7 +23,7 @@ fprintf('Taxa anual:      %.1f%%\n', taxa_anual*100);
 fprintf('Meses necessários: %d (%.1f anos)\n', meses, meses/12);
 
 figure;
-plot(0:meses, historico, 'b-', 'LineWidth', 1.5);
+plot(0:meses, historico, 'b-', 'LineWidth', 1.5, 'DisplayName', 'Capital');   
 hold on;
 line([0 meses], [valor_alvo valor_alvo], 'Color', 'r', 'LineStyle', '--', 'DisplayName', 'Valor-alvo');
 xlabel('Meses');
