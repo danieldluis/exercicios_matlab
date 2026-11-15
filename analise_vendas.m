@@ -23,7 +23,7 @@ for i = 1:4
 end
 
 figure;
-bar(vendas);
+bar(vendas');
 set(gca, 'XTickLabel', dias);
 xlabel('Dia da semana');
 ylabel('Vendas (€)');
